@@ -1,0 +1,8 @@
+mov r0,#1 
+mov r1,#10 
+loop:
+mul r0,r0,r1 
+cmp r0,#100 
+bne loop 
+swi 0x11
+.end
